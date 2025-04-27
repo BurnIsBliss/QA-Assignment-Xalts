@@ -1,3 +1,4 @@
+# Test data for the Sign Up and Sign In tests
 class TestDataSignUp:
     validEmailData = ['user+tag@example.com', 'simple@example.com', 'john.doe@example.com', 'user123@example.co.uk', 'user-name@example.io', 'user_name@example.org', 'u@example.com']
     invalidEmails = ['paul.example.com', '@example.com', 'abc@.com', 'paul@example', '!paul@example.com']

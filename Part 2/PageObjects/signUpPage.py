@@ -72,3 +72,11 @@ class SignUpPage:
     def isPasswordErrorMessageDisplayed(self):
         return self.driver.find_elements(*SignUpPage.passwordFieldErrorMessage)
     
+    # Function to check the presence of Sign In Button
+    def presenceSignInButton(self):
+        try:
+            WebDriverWait(self.driver, 2).until(EC.element_to_be_clickable((SignUpPage.signInButton)))
+            return "Sign out successful"
+        except:
+            return "Button not found!"
+    
