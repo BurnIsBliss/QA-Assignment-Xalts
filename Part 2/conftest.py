@@ -13,7 +13,7 @@ def SetUp(request):
         driver = webdriver.Chrome()
     else:
         driver = webdriver.Firefox()
-    driver.get('https://xaltsocnportal.web.app')
+    driver.get('https://xaltsocnportal.web.app/signin')
     driver.maximize_window()
     request.cls.driver = driver
     yield 
